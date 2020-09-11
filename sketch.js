@@ -11,8 +11,7 @@ function preload()
 function setup() {
 	createCanvas(1000, 500);
   database = firebase.database();
-  console.log(database);
- 
+
   foodobject=new Food()
   dog = createSprite(550,250,10,10);
   dog.addImage(dogimg1)
@@ -33,8 +32,6 @@ function draw(){
  background(64, 224, 208);
  foodobject.display()
  drawSprites();
-//  fill(255,255,254);
-//  textSize(15);
 drawSprites();
 }
 
